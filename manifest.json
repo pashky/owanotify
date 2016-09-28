@@ -1,0 +1,21 @@
+{
+    "name": "owanotify",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "owanotify",
+    "homepage_url": "http://github.com/pashky/owanotify",
+    "permissions": [
+        "https://*/owa/*",
+        "notifications"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/owa/*"
+            ],
+            "js": [
+                "inject.js"
+            ]
+        }
+    ]
+}
